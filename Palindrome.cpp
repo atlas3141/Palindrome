@@ -1,3 +1,6 @@
+/* September 10, Palindrome, Josh Howell
+   asks for input and tells you if its a palindrome */
+
 #include <iostream>
 
 using namespace std;

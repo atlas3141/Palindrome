@@ -3,17 +3,17 @@
 using namespace std;
 
 int main(){
-  char inputstr[80]; 
-  char cleanstr[80];
-  cin.get(inputstr,80); //get the string
+  char inputstr[81]; 
+  char cleanstr[81];
+  cin.get(inputstr,81); //get the string
   int j = 0;
-  for (int i = 0; i < 80; i++){ //removes punctuation and junk
+  for (int i = 0; i < 81; i++){ //removes punctuation and junk
     if (isalpha(inputstr[i])){
       cleanstr[j] = tolower(inputstr[i]);
       j++;
     }
     if (inputstr[i+1] == '\0'){
-      i=81;
+      i=82;
       cleanstr[j] = '\0';
     }
   }
